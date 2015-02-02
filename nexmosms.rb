@@ -4,7 +4,7 @@
 #
 # This handler formats alerts as SMSes and sends them off to a pre-defined recipient.
 #
-# Copyright 2015 Abdulrahim Umar <harsh001@gmail.com>
+# Copyright 2015 Abdulrahim Umar 
 #
 # Released under the same terms as Sensu (the MIT license); see LICENSE
 # for details.
@@ -57,7 +57,7 @@ class NexmoSMS < Sensu::Handler
         )
         puts "Notified #{recipient} for #{action_to_string}"
       rescue => e
-        puts "Failure detected while using Twilio to notify on event: #{e.message}"
+        puts "Failure detected while using Nexmo to notify on event: #{e.message}"
       end
     end
   end
